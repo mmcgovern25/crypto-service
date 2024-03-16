@@ -1,32 +1,35 @@
-import CoinItem from './CoinItem';
-import PropTypes from 'prop-types';
+import React from 'react'
+import CoinItem from './CoinItem'
+import Coin from '../routes/Coin'
+import { Link } from 'react-router-dom'
+
 import './coins.css'
 
-const Coins = ({ coins }) => {
-  if (!coins) return null; // Handle case where coins is undefined
+const Coins = (props) => {
+    return (
+        <div className='container'>
+            <div>
+                <div className='heading'>
+                    <p>#</p>
+                    <p className='coin-name'>Coin</p>
+                    <p>Price</p>
+                    <p>24h</p>
+                    <p className='hide-mobile'>Volume</p>
+                    <p className='hide-mobile'>Mkt Cap</p>
+                </div>
 
-  return (
-    <div className='container'>
-      <div>
-        <div className='heading'>
-          <p>#</p>
-          <p className='coin-name'>Coin</p>
-          <p>Price</p>
-          <p>24h</p>
-          <p className='hide-mobile'>Volume</p>
-          <p className='hide-mobile'>Mkt Cap</p>
+                {props.coins.map(coins => {
+                    return (
+                        <Link to={`/coin/${coins.id}`} element={<Coin />} key={coins.id}>
+                            <CoinItem coins={coins} />
+                        </Link>
+
+                    )
+                })}
+
+            </div>
         </div>
+    )
+}
 
-        {coins.map(coin => (
-          <CoinItem coins={coin} key={coin.id} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-Coins.propTypes = {
-  coins: PropTypes.arrayOf(PropTypes.object), // Validation for coins prop
-};
-
-export default Coins;
+export default Coins
