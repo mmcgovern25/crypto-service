@@ -1,16 +1,18 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Chart from 'chart.js/auto'; // Import Chart.js
 import '../components/coins.css';
 import DOMpurify from 'dompurify';
-import './Coin.css'
 
 const Coin = () => {
   const [coin, setCoin] = useState({});
+  const [historicalData, setHistoricalData] = useState([]);
   const { coinId } = useParams();
   const url = `https://api.coingecko.com/api/v3/coins/${coinId}`;
 
   useEffect(() => {
+    // Fetch coin data
     axios.get(url)
       .then((res) => {
         setCoin(res.data);
@@ -18,7 +20,54 @@ const Coin = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, [url]);
+
+    // Fetch historical data
+    const url2 = `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=USD&days=365`;
+    axios.get(url2)
+      .then((res) => {
+        setHistoricalData(res.data.prices);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, [url, coinId]);
+
+  // Create a chart after historicalData is fetched
+// Create a chart after historicalData is fetched
+useEffect(() => {
+  if (historicalData.length > 0) {
+    const ctx = document.getElementById('historicalChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: historicalData.map((data) => new Date(data[0]).toLocaleDateString()),
+        datasets: [{
+          label: 'Price',
+          data: historicalData.map((data) => data[1]),
+          borderColor: 'rgba(255, 99, 132, 1)',
+          borderWidth: 1,
+          fill: false
+        }]
+      },
+      options: {
+        scales: {
+          x: {
+            type: 'time',
+            time: {
+              unit: 'day'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Price (USD)'
+            }
+          }
+        }
+      }
+    });
+  }
+}, [historicalData]);
 
   // Conditional rendering to handle cases where coin data is not yet available
   if (Object.keys(coin).length === 0) {
@@ -101,6 +150,13 @@ const Coin = () => {
             </div>
           </div>
         </div>
+
+        <div className='content'>
+  <canvas id='historicalChart' width='400' height='200'></canvas> {/* Insert Chart here */}
+</div>
+
+{/* Rest of the component */}
+
 
         <div className='content'>
           <div className='about'>
