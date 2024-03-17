@@ -112,7 +112,9 @@ const Coin = () => {
         </div>
 
         <div className='content'>
-          <HistoryChart />
+          <div className='chart'>
+            <HistoryChart />
+          </div>
         </div>
 
 
