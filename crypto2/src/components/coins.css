@@ -1,4 +1,4 @@
-. container {
+.container {
 max-width: 1140px;
 margin: auto;
 }
@@ -38,6 +38,7 @@ margin: auto;
 
 img {
   height: 40px;
+  max-height: 40px;
   margin-right: 8px;
   width: auto;
 }
