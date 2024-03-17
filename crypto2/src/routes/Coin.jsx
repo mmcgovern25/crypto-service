@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import '../components/coins.css';
+import DOMpurify from 'dompurify'
 
 const Coin = () => {
   const [coin, setCoin] = useState({});
@@ -103,7 +104,11 @@ const Coin = () => {
         <div className='content'>
           <div className='about'>
             <h3>About</h3>
-            <p>{coin.description ? coin.description.en : ''}</p>
+            <p dangerouslySetInnerHTML={{
+              __html: DOMpurify.sanitize(coin.description ? coin.description.en : '')
+            }}>
+
+            </p>
           </div>
         </div>
       </div>
