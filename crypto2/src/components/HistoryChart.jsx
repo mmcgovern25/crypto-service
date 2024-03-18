@@ -3,6 +3,7 @@ import useAxios from './useAxios'
 import { useParams } from 'react-router-dom';
 import '../routes/Coin.css';
 
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -89,8 +90,8 @@ const HistoryChart = () => {
         fill: true,
         label: coinId.toUpperCase(),
         data: coinChartData.map(value => value.y),
-        borderColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        borderColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity for border
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
       }
     ]
   };

@@ -19,6 +19,7 @@ margin: auto;
   margin-left: -4rem;
 }
 
+
 .coin-row {
   display: flex;
   flex-wrap: wrap;
@@ -99,4 +100,30 @@ img {
     #BC9C37 90.29% /* Lighter Gold */
   );
   box-shadow: var(--card-shadow);
+}
+
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #fff8a4 -43.27%,
+    #fff8a4  -21.24%,
+    #fff8a4  12.19%,
+    #ffec7c 29.82%,
+    #ffea6a 51.94%,
+    #ffd43b  90.29%
+  );
+}
+
+.bg-blue-gradient-hover:hover {
+  background: linear-gradient(
+    157.81deg,
+    #fff8a4 -43.27%,
+    #fff8a4  -21.24%,
+    #fff8a4  12.19%,
+    #ffec7c 29.82%,
+    #ffea6a 51.94%,
+    #ffd43b  90.29%
+  );
+  color: black;
 }

@@ -56,3 +56,13 @@ body {
     font-weight: 400;
     font-style: normal;
   }
+
+  .white__gradient {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
+    filter: blur(123px);
+  }
+
+  .blue__gradient {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
+    filter: blur(123px);
+  }

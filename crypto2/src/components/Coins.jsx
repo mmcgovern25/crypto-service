@@ -9,7 +9,7 @@ const Coins = (props) => {
     return (
         <div className='container'>
             <div>
-                <div className='heading feature-card'>
+                <div className='heading bg-blue-gradient text-black font-poppins anta-regular text-xl'>
                     <p>#</p>
                     <p className='coin-name'>Coin</p>
                     <p>Price</p>

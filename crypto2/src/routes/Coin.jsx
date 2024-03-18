@@ -26,7 +26,7 @@ const AboutSection = ({ description }) => {
 
   return (
     <div className='about content bg-blue-gradient'>
-      <h3>About</h3>
+      <h3 className='text-xl font-poppins anta-regular'>About</h3>
       {paragraphs.map((paragraph, index) => (
         <p key={index} dangerouslySetInnerHTML={{ __html: DOMpurify.sanitize(paragraph) }} style={{ marginTop: '1em', textIndent: '1em' }} />
       ))}
@@ -56,21 +56,23 @@ const Coin = () => {
 
   return (
     <div>
+
+
       <div className='coin-container'>
         <div className='content bg-blue-gradient'>
-          <h1>{coin.name}</h1>
+          <h1 className='anta-regular font-poppins text-2xl'>{coin.name}</h1>
         </div>
         <div className='content bg-blue-gradient'>
-          <div className='rank'>
+          <div className='rank font-poppins anta-regular'>
             <span className='rank-btn'>Rank #{coin.market_cap_rank}</span>
           </div>
           <div className='info'>
-            <div className='coin-heading'>
+            <div className='coin-heading font-poppins anta-regular'>
               {coin.image ? <img src={coin.image.small} alt={coin.name} /> : null}
               <p>{coin.name}</p>
               {coin.symbol ? <p>{coin.symbol.toUpperCase()}/USD</p> : null}
             </div>
-            <div className='coin-price'>
+            <div className='coin-price font-poppins anta-regular'>
               {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
             </div>
           </div>
@@ -80,29 +82,29 @@ const Coin = () => {
           <table>
             <thead>
               <tr>
-                <th className='bg-blue-gradient'>1h</th>
-                <th className='bg-blue-gradient'>24h</th>
-                <th className='bg-blue-gradient'>7d</th>
-                <th className='bg-blue-gradient'>14d</th>
-                <th className='bg-blue-gradient'>30d</th>
-                <th className='bg-blue-gradient'>1yr</th>
+                <th className='bg-blue-gradient font-poppins '>1h</th>
+                <th className='bg-blue-gradient font-poppins '>24h</th>
+                <th className='bg-blue-gradient font-poppins '>7d</th>
+                <th className='bg-blue-gradient font-poppins '>14d</th>
+                <th className='bg-blue-gradient font-poppins '>30d</th>
+                <th className='bg-blue-gradient font-poppins '>1yr</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>{coin.market_data?.price_change_percentage_1h_in_currency ? <p>{coin.market_data.price_change_percentage_1h_in_currency.usd.toFixed(2)}%</p> : null}</td>
-                <td>{coin.market_data?.price_change_percentage_24h_in_currency ? <p>{coin.market_data.price_change_percentage_24h_in_currency.usd.toFixed(2)}%</p> : null}</td>
-                <td>{coin.market_data?.price_change_percentage_7d_in_currency ? <p>{coin.market_data.price_change_percentage_7d_in_currency.usd.toFixed(2)}%</p> : null}</td>
-                <td>{coin.market_data?.price_change_percentage_14d_in_currency ? <p>{coin.market_data.price_change_percentage_14d_in_currency.usd.toFixed(2)}%</p> : null}</td>
-                <td>{coin.market_data?.price_change_percentage_30d_in_currency ? <p>{coin.market_data.price_change_percentage_30d_in_currency.usd.toFixed(2)}%</p> : null}</td>
-                <td>{coin.market_data?.price_change_percentage_1y_in_currency ? <p>{coin.market_data.price_change_percentage_1y_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_1h_in_currency ? <p>{coin.market_data.price_change_percentage_1h_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_24h_in_currency ? <p>{coin.market_data.price_change_percentage_24h_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_7d_in_currency ? <p>{coin.market_data.price_change_percentage_7d_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_14d_in_currency ? <p>{coin.market_data.price_change_percentage_14d_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_30d_in_currency ? <p>{coin.market_data.price_change_percentage_30d_in_currency.usd.toFixed(2)}%</p> : null}</td>
+                <td className='font-poppins anta-regular text-center'>{coin.market_data?.price_change_percentage_1y_in_currency ? <p>{coin.market_data.price_change_percentage_1y_in_currency.usd.toFixed(2)}%</p> : null}</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div className='content bg-blue-gradient'>
-          <div className='stats'>
+          <div className='stats font-poppins anta-regular'>
             <div className='left'>
               <div className='row'>
                 <h4>24 Hour Low</h4>

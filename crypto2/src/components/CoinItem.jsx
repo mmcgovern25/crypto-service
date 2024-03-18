@@ -5,7 +5,7 @@ import { TrendingUp, TrendingDown } from '../icons/icons'
 
 const CoinItem = ({ coins }) => {
   return (
-    <div className='coin-row feature-card-hover'>
+    <div className='coin-row bg-blue-gradient-hover'>
       <p>{coins.market_cap_rank}</p>
       <div className='img-symbol'>
         <img src={coins.image} alt='' />

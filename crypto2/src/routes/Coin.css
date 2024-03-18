@@ -138,3 +138,8 @@ td, th {
     #ffd43b  90.29%
   );
 }
+
+.content:hover {
+  transform: scale(1.04);
+  transition: .3s ease-in-out;
+}
