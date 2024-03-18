@@ -25,7 +25,7 @@ const AboutSection = ({ description }) => {
   const paragraphs = createParagraphs(description);
 
   return (
-    <div className='about content feature-card'>
+    <div className='about content bg-blue-gradient'>
       <h3>About</h3>
       {paragraphs.map((paragraph, index) => (
         <p key={index} dangerouslySetInnerHTML={{ __html: DOMpurify.sanitize(paragraph) }} style={{ marginTop: '1em', textIndent: '1em' }} />
@@ -57,12 +57,12 @@ const Coin = () => {
   return (
     <div>
       <div className='coin-container'>
-        <div className='content feature-card'>
+        <div className='content bg-blue-gradient'>
           <h1>{coin.name}</h1>
         </div>
-        <div className='content feature-card'>
+        <div className='content bg-blue-gradient'>
           <div className='rank'>
-            <span className='rank-btn'>Rank # {coin.market_cap_rank}</span>
+            <span className='rank-btn'>Rank #{coin.market_cap_rank}</span>
           </div>
           <div className='info'>
             <div className='coin-heading'>
@@ -76,16 +76,16 @@ const Coin = () => {
           </div>
         </div>
 
-        <div className='content feature-card'>
+        <div className='content bg-blue-gradient'>
           <table>
             <thead>
               <tr>
-                <th className='feature-card'>1h</th>
-                <th className='feature-card'>24h</th>
-                <th className='feature-card'>7d</th>
-                <th className='feature-card'>14d</th>
-                <th className='feature-card'>30d</th>
-                <th className='feature-card'>1yr</th>
+                <th className='bg-blue-gradient'>1h</th>
+                <th className='bg-blue-gradient'>24h</th>
+                <th className='bg-blue-gradient'>7d</th>
+                <th className='bg-blue-gradient'>14d</th>
+                <th className='bg-blue-gradient'>30d</th>
+                <th className='bg-blue-gradient'>1yr</th>
               </tr>
             </thead>
             <tbody>
@@ -101,7 +101,7 @@ const Coin = () => {
           </table>
         </div>
 
-        <div className='content feature-card'>
+        <div className='content bg-blue-gradient'>
           <div className='stats'>
             <div className='left'>
               <div className='row'>
@@ -126,7 +126,7 @@ const Coin = () => {
           </div>
         </div>
 
-        <div className='content feature-card'>
+        <div className='content bg-blue-gradient'>
           <div className='chart'>
             <HistoryChart />
           </div>

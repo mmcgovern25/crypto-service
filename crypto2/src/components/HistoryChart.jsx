@@ -53,15 +53,16 @@ const HistoryChart = () => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       x: {
         ticks: {
-          color: 'white', // Color of x-axis labels
+          color: 'black', // Color of x-axis labels
         },
       },
       y: {
         ticks: {
-          color: 'white', // Color of y-axis labels
+          color: 'black', // Color of y-axis labels
         },
       },
     },
@@ -69,7 +70,7 @@ const HistoryChart = () => {
       title: {
         display: true,
         text: capitalizeFirstLetter(coinId),  // Your title text
-        color: 'white', // Color of the title text
+        color: 'black', // Color of the title text
         font: {
           size: 14, // Adjust font size as needed
         },
@@ -88,8 +89,8 @@ const HistoryChart = () => {
         fill: true,
         label: coinId.toUpperCase(),
         data: coinChartData.map(value => value.y),
-        borderColor: 'rgba(255, 255, 255, 0.5)', // Yellow color
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
       }
     ]
   };

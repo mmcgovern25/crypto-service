@@ -5,20 +5,21 @@
   display: flex;
   flex-direction: column;
   background-color: #26272b;
-  box-shadow: 0px 0px 12px #18191b;
+  box-shadow: 0px 0px 5px whitesmoke;
   border-radius: 8px;
+  color: black;
 }
 
 .rank {
-  margin: .5 0;
+  margin-top: 0.5rem;
 }
 
 .rank-btn {
-  border: 1px solid #6900ff;
-  box-shadow: 0px 0px 8px #6900ff;
-  background-color: #6900ff;
+  border: 1px solid black;
+  box-shadow: 0px 0px 8px black;
   border-radius: 8px;
   padding: .2rem;
+
 }
 
 .info {
@@ -67,7 +68,7 @@ th {
 .stats .row {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   margin: .6rem 0;
   padding-bottom: .5rem;
 }
@@ -124,4 +125,16 @@ td, th {
     #BC9C37 90.29% /* Lighter Gold */
   );
   box-shadow: var(--card-shadow);
+}
+
+.bg-blue-gradient {
+  background: linear-gradient(
+    157.81deg,
+    #fff8a4 -43.27%,
+    #fff8a4  -21.24%,
+    #fff8a4  12.19%,
+    #ffec7c 29.82%,
+    #ffea6a 51.94%,
+    #ffd43b  90.29%
+  );
 }
