@@ -46,9 +46,40 @@ const HistoryChart = () => {
 
   const coinChartData = response.prices.map(value => ({ x: value[0], y: value[1].toFixed(2) }));
 
-  const options = {
-    responsive: true
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
   };
+
+
+  const options = {
+    responsive: true,
+    scales: {
+      x: {
+        ticks: {
+          color: 'white', // Color of x-axis labels
+        },
+      },
+      y: {
+        ticks: {
+          color: 'white', // Color of y-axis labels
+        },
+      },
+    },
+    plugins: {
+      title: {
+        display: true,
+        text: capitalizeFirstLetter(coinId),  // Your title text
+        color: 'white', // Color of the title text
+        font: {
+          size: 14, // Adjust font size as needed
+        },
+      },
+      legend: {
+        display: false, // Hide legend
+      },
+    },
+  };
+
 
   const data = {
     labels: coinChartData.map(value => moment(value.x).format('MMM DD')),
@@ -57,8 +88,8 @@ const HistoryChart = () => {
         fill: true,
         label: coinId.toUpperCase(),
         data: coinChartData.map(value => value.y),
-        borderColor: 'rgb(255, 205, 86)', // Yellow color
-        backgroundColor: 'rgba(255, 205, 86, 0.5)',
+        borderColor: 'rgba(255, 255, 255, 0.5)', // Yellow color
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
       }
     ]
   };
