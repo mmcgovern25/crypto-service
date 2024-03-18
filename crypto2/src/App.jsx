@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   return (
-    <div className='w-full overflow-hidden'>
+    <div className='w-full overflow-hidden bg-primary'>
       <Navbar />
       <Routes>
         <Route path='/' element={<Coins coins={coins} />} />

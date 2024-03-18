@@ -24,8 +24,6 @@ margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #26272b;
-  box-shadow: 0px 0px 12px #18191b;
   border-radius: 8px;
   margin: 1rem 0;
   padding: .7rem 1rem;
@@ -61,9 +59,44 @@ img {
 }
 
 .red-text {
-  color:red;
+  color: #ff3333;
 }
 
 .green-text {
-  color: green;
+  color: #33cc33;
+}
+
+.bg-goldishYellow:hover {
+  background-color: rgba(255, 215, 0, 0.1); /* RGB values for goldish yellow with 0.1 opacity */
+}
+
+.blue__gradient:hover {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
+
+}
+
+.feedback-card {
+  background: transparent;
+}
+
+.feedback-card:hover {
+  background: var(--black-gradient);
+}
+
+.feature-card {
+  background: linear-gradient(
+    157.81deg,
+    #543C0C -43.27%, /* Dark Gold */
+    #BC9C37 90.29% /* Lighter Gold */
+  );
+  box-shadow: var(--card-shadow);
+}
+
+.feature-card-hover:hover {
+  background: linear-gradient(
+    157.81deg,
+    #543C0C -43.27%, /* Dark Gold */
+    #BC9C37 90.29% /* Lighter Gold */
+  );
+  box-shadow: var(--card-shadow);
 }

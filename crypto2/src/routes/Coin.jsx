@@ -37,16 +37,16 @@ const Coin = () => {
   return (
     <div>
       <div className='coin-container'>
-        <div className='content'>
+        <div className='content feature-card'>
           <h1>{coin.name}</h1>
         </div>
-        <div className='content'>
+        <div className='content feature-card'>
           <div className='rank'>
             <span className='rank-btn'>Rank # {coin.market_cap_rank}</span>
           </div>
           <div className='info'>
             <div className='coin-heading'>
-              {/* Make sure coin.image exists before accessing its properties */}
+              {/* Make sure coin.image exist before accessing its properties */}
               {coin.image ? <img src={coin.image.small} alt={coin.name} /> : null}
               <p>{coin.name}</p>
               {coin.symbol ? <p>{coin.symbol.toUpperCase()}/USD</p> : null}
@@ -58,16 +58,16 @@ const Coin = () => {
         </div>
 
 
-      <div className='content'>
+      <div className='content feature-card'>
         <table>
           <thead>
-            <tr>
-              <th>1h</th>
-              <th>24h</th>
-              <th>7d</th>
-              <th>14d</th>
-              <th>30d</th>
-              <th>1yr</th>
+            <tr >
+              <th className='feature-card'>1h</th>
+              <th className='feature-card'>24h</th>
+              <th className='feature-card'>7d</th>
+              <th className='feature-card'>14d</th>
+              <th className='feature-card'>30d</th>
+              <th className='feature-card'>1yr</th>
             </tr>
           </thead>
           <tbody>
@@ -84,7 +84,7 @@ const Coin = () => {
         </table>
       </div>
 
-      <div className='content'>
+      <div className='content feature-card'>
         <div className='stats'>
           <div className='left'>
             <div className='row'>
@@ -120,7 +120,7 @@ const Coin = () => {
 
 
 
-        <div className='content'>
+        <div className='content feature-card'>
           <div className='about'>
             <h3>About</h3>
             <p dangerouslySetInnerHTML={{
