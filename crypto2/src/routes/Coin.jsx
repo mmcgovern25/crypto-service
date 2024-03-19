@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import DOMpurify from 'dompurify';
 import './Coin.css';
 import HistoryChart from '../components/HistoryChart';
+import commaNumber from 'comma-number';
 
 const AboutSection = ({ description }) => {
   // Function to split the description into paragraphs
@@ -60,7 +61,7 @@ const Coin = () => {
 
       <div className='coin-container'>
         <div className='content bg-blue-gradient'>
-          <h1 className='anta-regular font-poppins text-2xl'>{coin.name}</h1>
+          <h1 className='anta-regular font-poppins text-2xl'>{coin.name.toUpperCase()}</h1>
         </div>
         <div className='content bg-blue-gradient'>
           <div className='rank font-poppins anta-regular'>
@@ -73,7 +74,7 @@ const Coin = () => {
               {coin.symbol ? <p>{coin.symbol.toUpperCase()}/USD</p> : null}
             </div>
             <div className='coin-price font-poppins anta-regular'>
-              {coin.market_data?.current_price ? <h1>${coin.market_data.current_price.usd.toLocaleString()}</h1> : null}
+              {coin.market_data?.current_price ? <h1>${commaNumber(coin.market_data.current_price.usd)}</h1> : null}
             </div>
           </div>
         </div>
@@ -103,30 +104,31 @@ const Coin = () => {
           </table>
         </div>
 
-        <div className='content bg-blue-gradient'>
-          <div className='stats font-poppins anta-regular'>
-            <div className='left'>
-              <div className='row'>
-                <h4>24 Hour Low</h4>
-                {coin.market_data?.low_24h ? <p>${coin.market_data.low_24h.usd.toLocaleString()}</p> : null}
-              </div>
-              <div className='row'>
-                <h4>24 Hour High</h4>
-                {coin.market_data?.high_24h ? <p>${coin.market_data.high_24h.usd.toLocaleString()}</p> : null}
-              </div>
-            </div>
-            <div className='right'>
-              <div className='row'>
-                <h4>Market Cap</h4>
-                {coin.market_data.market_cap ? <p>${coin.market_data.market_cap.usd.toLocaleString()}</p> : null}
-              </div>
-              <div className='row'>
-                <h4>Circulating Supply</h4>
-                {coin.market_data ? <p>${coin.market_data.circulating_supply.toLocaleString()}</p> : null}
-              </div>
-            </div>
-          </div>
-        </div>
+  <div className='content bg-blue-gradient'>
+  <div className='stats font-poppins anta-regular'>
+    <div className='left'>
+      <div className='row'>
+        <h4>24 Hour Low</h4>
+        {coin.market_data?.low_24h ? <p>${commaNumber(coin.market_data.low_24h.usd)}</p> : null}
+      </div>
+      <div className='row'>
+        <h4>24 Hour High</h4>
+        {coin.market_data?.high_24h ? <p>${commaNumber(coin.market_data.high_24h.usd)}</p> : null}
+      </div>
+    </div>
+    <div className='right'>
+      <div className='row'>
+        <h4>Market Cap</h4>
+        {coin.market_data?.market_cap ? <p>${commaNumber(coin.market_data.market_cap.usd)}</p> : null}
+      </div>
+      <div className='row'>
+        <h4>Circulating Supply</h4>
+        {coin.market_data ? <p>${commaNumber(coin.market_data.circulating_supply)}</p> : null}
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <div className='content bg-blue-gradient'>
           <div className='chart'>
