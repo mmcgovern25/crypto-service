@@ -47,6 +47,7 @@ margin: auto;
   flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 8px;
+  box-shadow: 0px 0px 10px yellow;
   margin: 1rem 0;
   padding: .7rem 1rem;
   width: calc(100% - 2rem);
@@ -62,6 +63,7 @@ margin: auto;
   transform: scale(1.04);
   transition: .3s ease-in-out;
   cursor: pointer;
+  font-weight: 600;
 }
 
 img {

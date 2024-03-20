@@ -57,12 +57,12 @@ const Coin = () => {
 
   return (
     <div>
-
-
       <div className='coin-container'>
         <div className='content bg-blue-gradient'>
           <h1 className='anta-regular font-poppins text-2xl'>{coin.name.toUpperCase()}</h1>
         </div>
+        <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
+        <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full blue__gradient'  />
         <div className='content bg-blue-gradient'>
           <div className='rank font-poppins anta-regular'>
             <span className='rank-btn'>Rank #{coin.market_cap_rank}</span>

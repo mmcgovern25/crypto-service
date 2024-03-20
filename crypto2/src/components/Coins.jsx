@@ -43,6 +43,8 @@ const Coins = (props) => {
                     <div className='text-gradient h-full w-1/2 absolute top-0 left-0'></div>
                 </div>
             </div>
+            <div className='absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient' />
+        <div className='absolute z-[0] -left-1/2 bottom-0 w-[50%] h-[50%] rounded-full blue__gradient'  />
 
             <div className='bg-primary'>
                 <div className='heading bg-blue-gradient text-black font-poppins anta-regular text-xl'>

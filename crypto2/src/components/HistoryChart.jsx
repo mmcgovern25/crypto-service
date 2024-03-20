@@ -28,6 +28,7 @@ ChartJS.register(
   Filler,
   Legend
 );
+
 const HistoryChart = () => {
   const { coinId } = useParams();
   const { response, loading, error } = useAxios(`https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=USD&days=365`);
@@ -90,8 +91,9 @@ const HistoryChart = () => {
         fill: true,
         label: coinId.toUpperCase(),
         data: coinChartData.map(value => value.y),
-        borderColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity for border
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        borderColor: 'rgba(255, 255, 255, 0.5)', // White color with 50% opacity
+backgroundColor: 'rgba(255, 255, 255, 0.5)', // White color with 50% opacity
+
       }
     ]
   };
