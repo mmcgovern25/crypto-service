@@ -91,8 +91,9 @@ const HistoryChart = () => {
         fill: true,
         label: coinId.toUpperCase(),
         data: coinChartData.map(value => value.y),
-        borderColor: 'rgba(255, 255, 255, 0.5)', // White color with 50% opacity
-backgroundColor: 'rgba(255, 255, 255, 0.5)', // White color with 50% opacity
+        borderColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity
+        backgroundColor: 'rgba(0, 0, 0, 0.5)', // Black color with 50% opacity
+ // White color with 50% opacity
 
       }
     ]
