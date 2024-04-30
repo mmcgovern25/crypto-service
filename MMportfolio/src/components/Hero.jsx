@@ -18,9 +18,10 @@ const Hero = () => {
   <br className="hidden sm:block" /> {/* Hide on small screens, show on medium and larger screens */}
   for blending design with technical code.
 </p>
-
   </div>
 </div>
+
+<ComputersCanvas />
 
 
     </section>
