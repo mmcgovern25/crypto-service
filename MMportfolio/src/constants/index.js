@@ -13,7 +13,6 @@ import {
   nodejs,
   git,
   figma,
-  sass,
  AE,
  beth,
  ANF,
