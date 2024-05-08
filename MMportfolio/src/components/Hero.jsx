@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import lines from "../assets/lines.mp4"
+import under5 from "../assets/under5.mp4"
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -10,7 +10,7 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <video src={lines} autoPlay loop muted>
+        <video src={under5} className="absolute inset-0 object-cover" autoPlay loop muted playsInline>
 
         </video>
         <div className='flex flex-col justify-center items-center mt-5'>
