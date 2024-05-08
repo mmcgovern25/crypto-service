@@ -15,23 +15,31 @@ import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
+import ruby from "./tech/rubyy.png";
+import rails from "./tech/railss.png";
 import reactjs from "./tech/reactjs.png";
+import bulma from "./tech/bulmaa.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import sass from "./tech/sasss.png";
+import framermotion from "./tech/framermotion.png";
+import gsap from "./tech/gsapp.png";
 
 import draft from "../assets/company/draft.png"
 import AE from "../assets/company/AE.png"
 import beth from "../assets/company/beth.png"
 import ANF from "../assets/company/moose.png"
-
+import lewagon from "../assets/company/lewaginn.png"
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  framermotion,
+  gsap,
   logo,
   backend,
   creator,
@@ -59,5 +67,10 @@ export {
   draft,
   AE,
   ANF,
-  beth
+  beth,
+  ruby,
+  rails,
+  bulma,
+  sass,
+  lewagon,
 };

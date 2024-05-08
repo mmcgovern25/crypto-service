@@ -4,17 +4,16 @@ import {
   creator,
   web,
   javascript,
-  typescript,
+  lewagon,
   html,
   css,
   reactjs,
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
   figma,
-  docker,
+  sass,
  AE,
  beth,
  ANF,
@@ -23,6 +22,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  ruby,
+  rails,
+  gsap,
 } from "../assets";
 
 export const navLinks = [
@@ -73,10 +75,6 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
@@ -93,8 +91,8 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Ruby",
+    icon: ruby,
   },
   {
     name: "Three JS",
@@ -109,8 +107,16 @@ const technologies = [
     icon: figma,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "rails",
+    icon: rails,
+  },
+  {
+    name: "sass",
+    icon: sass,
+  },
+  {
+    name: "gsap",
+    icon: gsap,
   },
 ];
 
@@ -120,7 +126,20 @@ const experiences = [
     company_name: "Abercrombie & Fitch",
     icon: ANF,
     iconBg: "#E6DEDD",
-    date: "March 2020 - April 2021",
+    date: "November 2023 - Present",
+    points: [
+      "❖	",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full Stack Web Development Bootcamp Graduate",
+    company_name: "Le Wagon",
+    icon: lewagon,
+    iconBg: "#E6DEDD",
+    date: "July 2023 - Sept 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -133,12 +152,12 @@ const experiences = [
     company_name: "Beth Israel Lehay Health",
     icon: beth,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2023 - July 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Over 150 requested updates made to all Beth Israel Lahey webpages, assisting in one of the biggest hospital mergers in the country.",
+      "Utilized such skills such as Adobe Photoshop, HTML, CSS, and Javascript to complete those requested updates.",
+      "Our team organized all of our webpages using SiteCore 10, and all internal communication was done through Microsoft Teams.",
+      "Managed website content for over 13 hospitals and health care facilities all together",
     ],
   },
   {
@@ -146,12 +165,11 @@ const experiences = [
     company_name: "Animal Equality",
     icon: AE,
     iconBg: "#E6DEDD",
-    date: "Jan 2022 - Jan 2023",
+    date: "Sept 2022 - January 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted the US team's marketing efforts including: Facebook Ad campaigns, Google Ad campaigns, and Email Marketing.",
+      "Most successful Facebook ad campaign led to over 146,000 US citizens signing our petition",
+      "Set up email newsletters through EveryAction and experimented with different ways to help increase our open rates.",
     ],
   },
   {
@@ -159,12 +177,11 @@ const experiences = [
     company_name: "DraftKings",
     icon: draft,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "June 2021 - Oct 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisting customers through Twitter and Instagram direct messages.",
+      "Troubleshooting issues for over 50 customers per day on average through our customer help center, and live chat features.",
+      "Developed many soft skills in learning how to defuse esclating situations with an unhappy customer, and provide the best service possible.",
     ],
   },
 ];
