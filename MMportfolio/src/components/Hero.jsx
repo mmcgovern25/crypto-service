@@ -1,26 +1,25 @@
 import { motion } from "framer-motion";
-import under5 from "../assets/under5.mp4"
+import og from "../assets/og.mp4"
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-
+    <video src={og} type="video/mp4" className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted playsInline>
+    </video>
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
-        <video src={under5} className="absolute inset-0 object-cover" autoPlay loop muted playsInline>
 
-        </video>
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
+          <div className='w-5 h-5 rounded-full bg-[#ff8000ea]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm bitch <span className='text-[#915EFF]'>Matt</span>
+            Hi, I'm <span className='text-[#ff8000ea]'>Matt</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a front-end devloper, <br className='sm:block hidden' />
