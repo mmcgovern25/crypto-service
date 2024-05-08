@@ -15,10 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+ AE,
+ beth,
+ ANF,
+ draft,
   carrent,
   jobit,
   tripguide,
@@ -116,10 +116,10 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
+    title: "Email Developer",
+    company_name: "Abercrombie & Fitch",
+    icon: ANF,
+    iconBg: "#E6DEDD",
     date: "March 2020 - April 2021",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -129,9 +129,9 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "CMS Content Manager",
+    company_name: "Beth Israel Lehay Health",
+    icon: beth,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -142,10 +142,10 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
+    title: "Digital Marketing Associate",
+    company_name: "Animal Equality",
+    icon: AE,
+    iconBg: "#E6DEDD",
     date: "Jan 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
@@ -155,9 +155,9 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Customer Experience Associate",
+    company_name: "DraftKings",
+    icon: draft,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
