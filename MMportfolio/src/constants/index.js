@@ -111,10 +111,6 @@ const technologies = [
     icon: rails,
   },
   {
-    name: "sass",
-    icon: sass,
-  },
-  {
     name: "gsap",
     icon: gsap,
   },
@@ -128,10 +124,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "November 2023 - Present",
     points: [
-      "❖	",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Responsible for developing daily emails to the kids sector of Abercrombie & Fitch using HTML, CSS, & Javascript. Using Oracle Responys to organize all of our builds.",
+      "Creating daily push notifications for Iphone and Android usrs for Abercrombie & Fitch adults, Hollister, and Abercrombie & Fitch kids through the Braze platform.",
+      "We work collaboratively with our brand partners, design partners, and copy writers to ensure all campaigns are build accurately and on time.",
     ],
   },
   {
@@ -141,10 +136,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "July 2023 - Sept 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "400-hour full immersion intensive programming bootcamp, programming languages covered include: HTML, CSS, JavaScript, Ruby, Ruby On Rails, and SQL.",
+      "Final project my team created app entirely from scratch that connects Airbnb owners with cleaners that serves as a centralized location for work opportunities.",
+      "Other skills learned included utilizing figma for creating a design, operating the terminal, and VS code.",
     ],
   },
   {
