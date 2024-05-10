@@ -2,24 +2,26 @@ import { motion } from "framer-motion";
 import vs from "../assets/og.mp4"
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import bluetech from "../assets/bluetech2.jpg";
+
 
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-    <video src={vs} type="video/mp4" className="absolute inset-0 w-full h-full object-cover" autoPlay loop muted playsInline>
-    </video>
+    <img src={bluetech} className="absolute inset-0 w-full h-full object-cover">
+    </img>
       <div
         className={`absolute inset-0 top-[90px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
 
         <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#ff8000ea]' />
+          <div className='w-5 h-5 rounded-full bg-[#4169E1]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#ff8000ea]'>Matt</span>
+            Hi, I'm <span className='text-[#4169E1]'>Matt</span>
           </h1>
 
           <p className={`${styles.heroSubText} text-white-100`}>

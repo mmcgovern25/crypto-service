@@ -6,6 +6,8 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import bluetech from "./bluetech2.jpg";
+import mm from "./mm5.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -32,6 +34,7 @@ import AE from "../assets/company/AE.png"
 import beth from "../assets/company/beth.png"
 import ANF from "../assets/company/moose.png"
 import lewagon from "../assets/company/lewaginn.png"
+
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -73,4 +76,6 @@ export {
   bulma,
   sass,
   lewagon,
+  bluetech,
+  mm
 };
