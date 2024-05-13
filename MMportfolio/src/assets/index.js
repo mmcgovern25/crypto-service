@@ -8,6 +8,13 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import bluetech from "./bluetech2.jpg";
 import mm from "./mm5.png";
+import HAW from "./HAW.jpg";
+import HIr from "./HIr.jpg";
+import LIr from "./LIr.jpg";
+import BAr from "./BAr.jpg";
+import NYr from "./NYr.jpg";
+import gavea from "./gavea.jpg";
+import wedding from "./wedding.jpg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -77,5 +84,12 @@ export {
   sass,
   lewagon,
   bluetech,
-  mm
+  mm,
+  HAW,
+  NYr,
+  HIr,
+  BAr,
+  LIr,
+  gavea,
+  wedding,
 };

@@ -1,8 +1,5 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+
   javascript,
   lewagon,
   html,
@@ -24,6 +21,11 @@ import {
   ruby,
   rails,
   gsap,
+wedding,
+gavea,
+  BAr,
+  LIr
+
 } from "../assets";
 
 export const navLinks = [
@@ -44,19 +46,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: LIr,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Travel Enthusiast",
+    icon: gavea,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Avid Sports Fan",
+    icon: BAr,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Family & Friends",
+    icon: wedding,
   },
 ];
 
@@ -208,7 +210,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Crypto Trackers",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -217,11 +219,15 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "ThreeJS",
         color: "green-text-gradient",
       },
       {
         name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ChartJS",
         color: "pink-text-gradient",
       },
     ],
@@ -229,7 +235,7 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "Nike Ecommerce Store",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -238,11 +244,11 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "nodeJS",
         color: "pink-text-gradient",
       },
     ],
@@ -250,20 +256,83 @@ const projects = [
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Connect & Clean",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
       {
-        name: "nextjs",
+        name: "Ruby",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Ruby On Rails",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Alec Simonovitch CPA",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "iStore Clone",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "ThreeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GSAP",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Pokemon Power Rankings",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "Vanilla JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
         color: "pink-text-gradient",
       },
     ],

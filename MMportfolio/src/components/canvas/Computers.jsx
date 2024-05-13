@@ -8,6 +8,10 @@ import CanvasLoader from "../Loader";
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  // Adjust rotation to tilt the model slightly to one side
+  const rotation = isMobile ? [-0.01, -0.8, -0.1] : [-0.01, -0.8, -0.1];
+
+
   return (
     <mesh>
       <hemisphereLight intensity={3} groundColor='black' />
@@ -24,11 +28,12 @@ const Computers = ({ isMobile }) => {
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={rotation}
       />
     </mesh>
   );
 };
+
 
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);

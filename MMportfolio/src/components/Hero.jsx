@@ -25,7 +25,7 @@ const Hero = () => {
           </h1>
 
           <p className={`${styles.heroSubText} text-white-100`}>
-            I'm a front-end devloper, <br className='sm:block hidden' />
+            I'm a front-end devloper, <br className='md:block hidden' />
             with a passion for blending design with technical code.
           </p>
 
