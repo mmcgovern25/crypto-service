@@ -24,7 +24,13 @@ import {
 wedding,
 gavea,
   BAr,
-  LIr
+  LIr,
+  nike,
+  crypto,
+  pokemon1,
+  pokemon2,
+  sims,
+  iphone
 
 } from "../assets";
 
@@ -231,7 +237,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: crypto,
     source_code_link: "https://github.com/",
   },
   {
@@ -252,7 +258,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: nike,
     source_code_link: "https://github.com/",
   },
   {
@@ -290,7 +296,7 @@ const projects = [
         color: "green-text-gradient",
       },
     ],
-    image: tripguide,
+    image: sims,
     source_code_link: "https://github.com/",
   },
   {
@@ -315,7 +321,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: iphone,
     source_code_link: "https://github.com/",
   },
   {
@@ -336,7 +342,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: pokemon1,
     source_code_link: "https://github.com/",
   },
 ];

@@ -36,6 +36,13 @@ import sass from "./tech/sasss.png";
 import framermotion from "./tech/framermotion.png";
 import gsap from "./tech/gsapp.png";
 
+import sims from "./sims.png";
+import pokemon1 from "./pokemon1.png";
+import pokemon2 from "./pokemon2.png";
+import crypto from "./crypto.png";
+import iphone from "./iphone.png"
+import nike from "./nike.png";
+
 import draft from "../assets/company/draft.png"
 import AE from "../assets/company/AE.png"
 import beth from "../assets/company/beth.png"
@@ -92,4 +99,10 @@ export {
   LIr,
   gavea,
   wedding,
+  sims,
+  iphone,
+  pokemon1,
+  pokemon2,
+  crypto,
+  nike
 };

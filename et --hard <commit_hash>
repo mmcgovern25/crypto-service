@@ -1,0 +1,65 @@
+[33m2f828c5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD~6
+[33mddfee51[m HEAD@{1}: reset: moving to HEAD~4
+[33m18b0f87[m[33m ([m[1;32mbackup[m[33m)[m HEAD@{2}: commit: Removed large file hello.mp4
+[33m51ff3d8[m HEAD@{3}: commit: no video
+[33md78b946[m HEAD@{4}: commit: edits
+[33m3d074a8[m HEAD@{5}: commit: resume
+[33mddfee51[m HEAD@{6}: commit: abercrombie added
+[33m9b1fe48[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{7}: commit: test
+[33m49740b8[m HEAD@{8}: commit: draft completed, but needs lots of edits
+[33m0bb0a8e[m HEAD@{9}: commit: testimonals
+[33m7f33239[m HEAD@{10}: commit: projects part 1
+[33mdbfe553[m HEAD@{11}: commit: starting projects section
+[33m2f828c5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{12}: commit: balls working
+[33m37f42c6[m HEAD@{13}: commit: starting tech section
+[33m37b504a[m HEAD@{14}: commit: start of experience section
+[33mee46844[m HEAD@{15}: commit: section wraper wall
+[33mc7f0d57[m HEAD@{16}: commit: 3d computer
+[33m00f9e06[m HEAD@{17}: commit: hero header
+[33m04379bf[m HEAD@{18}: commit: navbar complete
+[33m21d9e5a[m HEAD@{19}: commit: navbar part 1
+[33m33022de[m HEAD@{20}: commit: navbar set up
+[33m23c1b3b[m HEAD@{21}: commit: app.jsx set up
+[33mf9fd1e1[m HEAD@{22}: commit: set up
+[33m9f327c5[m HEAD@{23}: commit: assets and public
+[33m0033336[m HEAD@{24}: pull origin main: Merge made by the 'ort' strategy.
+[33mc938ffa[m HEAD@{25}: commit: vite kickstart
+[33me79bcc2[m HEAD@{26}: commit: hi
+[33m9b10fc2[m HEAD@{27}: Branch: renamed refs/heads/main to refs/heads/main
+[33m9b10fc2[m HEAD@{29}: commit: h1
+[33m74a6bb0[m HEAD@{30}: Branch: renamed refs/heads/main to refs/heads/main
+[33m74a6bb0[m HEAD@{32}: Branch: renamed refs/heads/main to refs/heads/main
+[33m74a6bb0[m HEAD@{34}: commit: first commit
+[33md8937d4[m HEAD@{35}: commit: favicon and minor updates
+[33mb7446c8[m HEAD@{36}: commit: slight update to search and header size
+[33m7f87b38[m HEAD@{37}: Branch: renamed refs/heads/main to refs/heads/main
+[33m7f87b38[m HEAD@{39}: commit: please work
+[33m909ce62[m HEAD@{40}: commit: good
+[33m5f27115[m HEAD@{41}: commit: good to go
+[33maa010c0[m HEAD@{42}: commit: lots of work done today. Now to get the 2 apps hooked up
+[33mc142b6f[m HEAD@{43}: commit: styles pt 4
+[33ma67f11c[m HEAD@{44}: commit: styles pt 3
+[33m8b3cf82[m HEAD@{45}: commit: landing pages styles pt2
+[33mc9edeb6[m HEAD@{46}: commit: adding landing page styles pt1
+[33m8319be6[m HEAD@{47}: commit: golden charts
+[33mfe7e0bd[m HEAD@{48}: commit: chart js successfully rendered
+[33m63dbfef[m HEAD@{49}: commit: trying to add chart js
+[33m27cae05[m HEAD@{50}: commit: initial build done
+[33mc756794[m HEAD@{51}: commit: wrap for tonight
+[33m42f1528[m HEAD@{52}: commit: coin information page structure complete, now for styling
+[33m56dfdf0[m HEAD@{53}: commit: new coin pages set up
+[33mf217d78[m HEAD@{54}: commit: rollin now. all data presented cleanly on dashboard homepage
+[33m93e50f6[m HEAD@{55}: commit: one last push for tonight
+[33m9a598cf[m HEAD@{56}: commit: data in console, but not on page
+[33m513532f[m HEAD@{57}: commit: api connected
+[33m221f608[m HEAD@{58}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{60}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{62}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{64}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{66}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{68}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{70}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{72}: Branch: renamed refs/heads/main to refs/heads/main
+[33m221f608[m HEAD@{74}: commit: first
+[33m1e0e031[m HEAD@{75}: Branch: renamed refs/heads/master to refs/heads/main
+[33m1e0e031[m HEAD@{77}: commit (initial): first commit
