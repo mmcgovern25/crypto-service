@@ -43,6 +43,7 @@ import crypto from "./crypto.png";
 import iphone from "./iphone.png"
 import nike from "./nike.png";
 
+import play from "./play.png";
 import draft from "../assets/company/draft.png"
 import AE from "../assets/company/AE.png"
 import beth from "../assets/company/beth.png"
@@ -104,5 +105,6 @@ export {
   pokemon1,
   pokemon2,
   crypto,
-  nike
+  nike,
+  play
 };

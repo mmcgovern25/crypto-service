@@ -14,8 +14,6 @@ import {
  beth,
  ANF,
  draft,
-  carrent,
-  jobit,
   tripguide,
   threejs,
   ruby,
@@ -28,7 +26,6 @@ gavea,
   nike,
   crypto,
   pokemon1,
-  pokemon2,
   sims,
   iphone
 
@@ -238,8 +235,9 @@ const projects = [
       },
     ],
     image: crypto,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mmcgovern25/crpyto-app",
   },
+
   {
     name: "Nike Ecommerce Store",
     description:
@@ -259,7 +257,7 @@ const projects = [
       },
     ],
     image: nike,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mmcgovern25/Nike-Ecommerce/tree/main/Nike-Store",
   },
   {
     name: "Connect & Clean",
@@ -280,7 +278,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/PSorianoR/Connect-and-Clean",
   },
   {
     name: "Alec Simonovitch CPA",
@@ -297,7 +295,8 @@ const projects = [
       },
     ],
     image: sims,
-    source_code_link: "https://github.com/",
+    live_link: "https://alecsimscpa2.netlify.app/",
+    source_code_link: "https://github.com/mmcgovern25/AlecSimsCPA",
   },
   {
     name: "iStore Clone",
@@ -322,7 +321,7 @@ const projects = [
       },
     ],
     image: iphone,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mmcgovern25/iPhoneGSAP3JS",
   },
   {
     name: "Pokemon Power Rankings",
@@ -343,7 +342,7 @@ const projects = [
       },
     ],
     image: pokemon1,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/mmcgovern25/PKMN-Power-Rankings",
   },
 ];
 
