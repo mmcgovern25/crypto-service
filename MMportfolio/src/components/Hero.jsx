@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 import bluetech from "../assets/bluetech2.jpg";
 
 
@@ -24,14 +23,12 @@ const Hero = () => {
           </h1>
 
           <p className={`${styles.heroSubText} text-white-100`}>
-            I'm a front-end developer, <br className='md:block hidden' />
+            I'm a front-end developer, ready for test. <br className='md:block hidden' />
             with a passion for blending design with technical code.
           </p>
 
         </div>
       </div>
-
-      <ComputersCanvas />
 
       <div className='absolute xs:bottom-5 bottom-10 w-full flex justify-center items-center'>
         <a href='#about'>
