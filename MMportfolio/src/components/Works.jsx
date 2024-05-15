@@ -5,12 +5,12 @@ import { github, play } from '../assets/';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { Tilt } from 'react-tilt';
+
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
-      <Tilt
+      <div
 
         className='bg-tertiary rounded-2xl p-5 2xl sm:w-[340px] w-full'
       >
@@ -59,7 +59,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link, 
           </p>
         ))}</div>
 
-      </Tilt>
+      </div>
     </motion.div>
   )
 }
