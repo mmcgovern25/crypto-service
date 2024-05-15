@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import bluetech from "../assets/bluetech2.jpg";
+import { TypeAnimation } from 'react-type-animation';
+
+
+
 
 
 const Hero = () => {
@@ -19,13 +23,30 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#4169E1]'>Matt</span>
+          Hey, I'm <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-300">Matt.</span>
           </h1>
 
-          <p className={`${styles.heroSubText} text-white-100`}>
-            I'm a front-end developer, ready for test. <br className='md:block hidden' />
-            with a passion for blending design with technical code.
-          </p>
+          <p className={`${styles.sectionHeadText} text-white-100`}>
+            I'm a {" "}
+
+          <TypeAnimation  className={`bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-blue-300 ${styles.heroHeadTextGradient}`}
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'Web Developer.',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'UI/UX Designer.',
+        1000,
+        'Mobile Developer.',
+        1000,
+        'Tech Enthusiast.',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '1em', display: 'inline-block' }}
+      repeat={Infinity}
+    />
+    </p>
 
         </div>
       </div>

@@ -3,6 +3,13 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      backgroundImage: {
+        'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
+        'violet-gradient': 'linear-gradient(to bottom, #4169E1, #87CEEB)',
+      },
+      textColor: {
+        'transparent': 'transparent',
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
