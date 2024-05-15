@@ -14,7 +14,6 @@ import {
  beth,
  ANF,
  draft,
-  tripguide,
   threejs,
   ruby,
   rails,
@@ -262,7 +261,7 @@ const projects = [
   {
     name: "Connect & Clean",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Connect & Clean was our final group project that myself and my batchmates created at the Le Wagon Full Stack Web Development Bootcamp. The intention of the site is to fill a void for Airbnb owners, and cleaners alike. That was to give them a platform where they can easily arrange cleaning job opportunities. Entirely build using Ruby and Ruby on Rails.",
     tags: [
       {
         name: "Ruby",
@@ -277,13 +276,13 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: sims,
     source_code_link: "https://github.com/PSorianoR/Connect-and-Clean",
   },
   {
     name: "Alec Simonovitch CPA",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A complete site for one of my best friends new side huste business he plans to start. With the main focus to simply collect emails and schedule consultation calls, to see how Alec could potentially help their finianical needs. This site was built using React and Tailwind CSS as the staple, my personal favorite part is the slick logo carousel that was used to showcase his experience.",
     tags: [
       {
         name: "React",
@@ -301,7 +300,7 @@ const projects = [
   {
     name: "iStore Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A beautifully designed landing page for the newest iPhone 15 Pro, made to mimik the real deal on the apple website. This landing page utilizies a variety of design tactics to give it a modern and slick design, including a bento box video collage, 3D models using ThreeJS, and scroll animations using GSAP.",
     tags: [
       {
         name: "React",
@@ -326,7 +325,7 @@ const projects = [
   {
     name: "Pokemon Power Rankings",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A complete detailed pokedex from the first five generations of pokemon, with the functionality to add your favorite pokemon to a variety of lists. Those include your top six (your party), top 15 (your dream team), top 30 (box 1), and top 50 (mt battle). Your lists are updated in real time with their video game in PC image. You can compare with your friends and let the debates begin! All done with basic HTML, CSS, and plain vanilla Javascript as was my first solo project.",
     tags: [
       {
         name: "Vanilla JS",
