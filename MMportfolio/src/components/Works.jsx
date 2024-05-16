@@ -77,9 +77,9 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 mb-10 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcase my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          The six projects below I felt best showcased my abilities as a evergrowing developer. I made it a priority to work on projects that interested me on a personal level. So through these projects, I began to felt like an artist freely expressing myself as well. A few of these projects specifically, such as Connect & Clean, and Alec Simonvitch CPA were built with the attend of gaining real web traction as legitmate businesses in the near future.
         </motion.p>
       </div>
 
