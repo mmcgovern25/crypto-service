@@ -49,8 +49,8 @@ const Hero = () => {
       </div>
     </div>
 
-    <Tilt className='absolute inset-0 top-[300px] lg:top-[50px] left-[200px] sm:left-[100px] md:left-[150px] lg:left-[800px] xl:left-[300px] flex justify-center items-center z-20'>
-      <img src={heroimg} alt="Matt McGovern Photo" className="green-pink-gradient p-[2px] rounded-full w-auto h-auto max-w-xs" />
+    <Tilt className='absolute inset-0 top-[300px] lg:top-[50px] left-[250px] sm:left-[100px] md:left-[150px] lg:left-[800px] xl:left-[300px] flex justify-center items-center z-20'>
+      <img src={heroimg} alt="Matt McGovern Photo" className="green-pink-gradient p-[2px] rounded-full shadow-card w-auto h-auto max-w-xs" />
     </Tilt>
 
     <div className='absolute xs:bottom-5 bottom-10 w-full flex justify-center items-center z-30'>
