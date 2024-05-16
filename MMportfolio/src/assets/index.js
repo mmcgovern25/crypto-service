@@ -8,6 +8,8 @@ import close from "./close.svg";
 import bluetech from "./bluetech2.jpg";
 import mm from "./mm5.png";
 
+import heroimg from "./heroimg.jpg";
+
 import LIr from "./LIr.jpg";
 import BAr from "./BAr.jpg";
 
@@ -85,5 +87,6 @@ export {
   pokemon1,
   crypto,
   nike,
-  play
+  play,
+  heroimg,
 };
