@@ -183,38 +183,11 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
     name: "Crypto Trackers",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A complete initial sales page aimed to persuade the user to sign up for the service. Once the user has signed up, they will gain access to all tracking data of the top cryptocurrencies around the world. A fantastic service for those who are interested in investing, or curious in learning the history behind each coin.",
     tags: [
       {
         name: "react",
@@ -240,7 +213,7 @@ const projects = [
   {
     name: "Nike Ecommerce Store",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A mock version of a Nike shoe ecommerce site, with a strickly beautiful design. My personal favorite touch was the hover animation over the sneakers, that is aimed to mimick a running step, perfect for the athletic theme of the site. The site also includes a full add to cart functionality with react useState.",
     tags: [
       {
         name: "react",
@@ -261,7 +234,7 @@ const projects = [
   {
     name: "Connect & Clean",
     description:
-      "Connect & Clean was our final group project that myself and my batchmates created at the Le Wagon Full Stack Web Development Bootcamp. The intention of the site is to fill a void for Airbnb owners, and cleaners alike. That was to give them a platform where they can easily arrange cleaning job opportunities. Entirely build using Ruby and Ruby on Rails.",
+      "Connect & Clean was our final group project that myself and my batchmates created at the Le Wagon Full Stack Web Development Bootcamp. The intention of the site is to fill a void for Airbnb owners, and cleaners alike. That was to give them a platform where they can easily arrange cleaning job opportunities.",
     tags: [
       {
         name: "Ruby",
@@ -282,7 +255,7 @@ const projects = [
   {
     name: "Alec Simonovitch CPA",
     description:
-      "A complete site for one of my best friends new side huste business he plans to start. With the main focus to simply collect emails and schedule consultation calls, to see how Alec could potentially help their finianical needs. This site was built using React and Tailwind CSS as the staple, my personal favorite part is the slick logo carousel that was used to showcase his experience.",
+      "A complete site for one of my best friends new side huste business he plans to start. With the main focus to simply collect emails and schedule consultation calls, to see how Alec could potentially help their finianical needs. My personal favorite part is the slick logo carousel that was used to showcase his experience.",
     tags: [
       {
         name: "React",
@@ -325,7 +298,7 @@ const projects = [
   {
     name: "Pokemon Power Rankings",
     description:
-      "A complete detailed pokedex from the first five generations of pokemon, with the functionality to add your favorite pokemon to a variety of lists. Those include your top six (your party), top 15 (your dream team), top 30 (box 1), and top 50 (mt battle). Your lists are updated in real time with their video game in PC image. You can compare with your friends and let the debates begin! All done with basic HTML, CSS, and plain vanilla Javascript as was my first solo project.",
+      "A complete detailed pokedex, with the functionality to rank your favorite pokemon to a variety of different lists. Your rankings are then updated with the respective spirit images. Let the debates begin!",
     tags: [
       {
         name: "Vanilla JS",
@@ -345,4 +318,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
