@@ -8,7 +8,7 @@ import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[240px] w-full'>
+  <Tilt className='hidden md:flex xs:w-[240px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
