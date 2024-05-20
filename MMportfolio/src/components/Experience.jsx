@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences } from "../constants";
+import { experiences, technologies } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
@@ -77,6 +77,17 @@ const Experience = () => {
             />
           ))}
         </VerticalTimeline>
+      </div>
+
+      <div className='flex flex-row gap-4 mt-8'>
+        {technologies.map((technology, index) => (
+          <img
+            key={index}
+            src={technology.icon}
+            alt={technology.name}
+            className='w-16 h-16'
+          />
+        ))}
       </div>
     </>
   );
