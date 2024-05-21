@@ -4,6 +4,7 @@ import bluetech from "../assets/bluetech2.jpg";
 import { TypeAnimation } from 'react-type-animation';
 import { heroimg } from '../assets/';
 import { Tilt } from "react-tilt";
+import Matt_McGovern_Web_Dev_Resume_2024 from "../assets/Matt_McGovern_Web_Dev_Resume_2024.pdf"
 
 
 const Hero = () => {
@@ -55,7 +56,7 @@ const Hero = () => {
 
           <div className='flex flex-row gap-4 mt-8'>
             <button className={`px-6 py-3 md:px-8 md:py-5 rounded-full bg-white  text-white bg-gradient-to-br from-blue-700 to-blue-300 hover:bg-slate-800`} onClick={scrollToContact}>Hire Me</button>
-            <button className={`px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border  border-white`}>Download Resume</button>
+            <a href={Matt_McGovern_Web_Dev_Resume_2024} download className={`px-6 py-3 rounded-full bg-transparent hover:bg-slate-800 text-white border  border-white`}>Download Resume</a>
           </div>
         </div>
       </div>

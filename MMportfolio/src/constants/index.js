@@ -146,7 +146,7 @@ const experiences = [
   },
   {
     title: "CMS Content Manager",
-    company_name: "Beth Israel Lehay Health",
+    company_name: "Beth Israel Lahey Health",
     icon: beth,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - July 2023",
