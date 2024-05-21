@@ -8,10 +8,35 @@ import { motion } from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
-import { experiences, technologies } from "../constants";
+import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
-import { Tilt } from "react-tilt";
+
+const Experience = () => {
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p className={`${styles.sectionSubText} text-center`}>
+          What I have done so far
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Work Experience.
+        </h2>
+      </motion.div>
+
+      <div className='mt-20 flex flex-col'>
+        <VerticalTimeline>
+          {experiences.map((experience, index) => (
+            <ExperienceCard
+              key={`experience-${index}`}
+              experience={experience}
+            />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
+};
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -54,46 +79,6 @@ const ExperienceCard = ({ experience }) => {
         ))}
       </ul>
     </VerticalTimelineElement>
-  );
-};
-
-const Experience = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} text-center`}>
-          What I have done so far
-        </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
-        </h2>
-      </motion.div>
-
-      <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience-${index}`}
-              experience={experience}
-            />
-          ))}
-        </VerticalTimeline>
-      </div>
-
-      <div className='flex flex-row flex-wrap justify-center gap-12 mt-36'>
-  {technologies.map((technology, index) => (
-    <Tilt key={index} className='tech-icon-container green-pink-gradient p-[1px] rounded-[12px]'>
-      <img
-        src={technology.icon}
-        alt={technology.name}
-        className='tech-icon w-28 h-28 rounded-[12px] bg-tertiary shadow-card'
-      />
-    </Tilt>
-  ))}
-</div>
-
-
-    </>
   );
 };
 

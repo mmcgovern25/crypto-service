@@ -5,6 +5,7 @@ import About from './About';
 import Experience from './Experience';
 import Works from './Works';
 import Contact from './Contact';
+import Technologies from './Technologies';
 
 export {
   Hero,
@@ -13,5 +14,6 @@ export {
   Experience,
   Works,
   Contact,
-  StarsCanvas
+  StarsCanvas,
+  Technologies
 }
