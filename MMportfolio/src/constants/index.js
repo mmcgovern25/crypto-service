@@ -26,7 +26,8 @@ gavea,
   crypto,
   pokemon1,
   sims,
-  iphone
+  iphone,
+  framermotion
 
 } from "../assets";
 
@@ -116,6 +117,10 @@ const technologies = [
   {
     name: "gsap",
     icon: gsap,
+  },
+  {
+    name: "framer motion",
+    icon: framermotion,
   },
 ];
 
@@ -285,6 +290,10 @@ const projects = [
       },
       {
         name: "ThreeJS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "GSAP",
         color: "pink-text-gradient",
       },
       {
