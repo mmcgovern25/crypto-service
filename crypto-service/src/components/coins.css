@@ -1,0 +1,164 @@
+.container {
+  max-width: 1140px;
+  margin: auto;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #26272b;
+    box-shadow: 0px 0px 12px #18191b;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    padding: .7rem 1rem;
+    font-weight: 700;
+  }
+
+  .search-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px yellow;
+    border-radius: 8px;
+    margin: 2rem 1rem;
+    padding: .7rem 1rem;
+    font-weight: 700;
+    overflow: hidden;
+  }
+
+  .page-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 15px yellow;
+    border-radius: 8px;
+    padding: .7rem 1rem;
+    font-weight: 700;
+
+  }
+
+  .coin-name {
+    margin-left: -4rem;
+  }
+
+
+  .coin-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px yellow;
+    margin: 1rem 0;
+    padding: .7rem 1rem;
+    width: calc(100% - 1rem);
+  }
+
+  .selected-button-hover:hover {
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .coin-row:hover {
+    transform: scale(1.04);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  img {
+    height: 40px;
+    max-height: 40px;
+    margin-right: 8px;
+    width: auto;
+  }
+
+  .img-symbol {
+    display: flex;
+    align-items: center;
+  }
+
+  .coin-row p {
+    margin: 0; /* Reset margin to ensure consistent spacing */
+  }
+
+  @media screen and (max-width: 720px) {
+    .hide-mobile {
+      display: none;
+    }
+  }
+
+  .red-text {
+    color: #ff3333;
+  }
+
+  .green-text {
+    color: #33cc33;
+  }
+
+  .bg-goldishYellow:hover {
+    background-color: rgba(255, 215, 0, 0.1); /* RGB values for goldish yellow with 0.1 opacity */
+  }
+
+  .blue__gradient:hover {
+    background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #ffec7c 100%);
+
+  }
+
+  .feedback-card {
+    background: transparent;
+  }
+
+  .feedback-card:hover {
+    background: var(--black-gradient);
+  }
+
+  .feature-card {
+    background: linear-gradient(
+      157.81deg,
+      #543C0C -43.27%, /* Dark Gold */
+      #BC9C37 90.29% /* Lighter Gold */
+    );
+    box-shadow: var(--card-shadow);
+  }
+
+  .feature-card-hover:hover {
+    background: linear-gradient(
+      157.81deg,
+      #543C0C -43.27%, /* Dark Gold */
+      #BC9C37 90.29% /* Lighter Gold */
+    );
+    box-shadow: var(--card-shadow);
+  }
+
+
+  .bg-blue-gradient {
+    background: linear-gradient(
+      157.81deg,
+      #fff8a4 -43.27%,
+      #fff8a4  -21.24%,
+      #fff8a4  12.19%,
+      #ffec7c 29.82%,
+      #ffea6a 51.94%,
+      #ffd43b  90.29%
+    );
+  }
+
+  .bg-blue-gradient-hover:hover {
+    background: linear-gradient(
+      157.81deg,
+      #fff8a4 -43.27%,
+      #fff8a4  -21.24%,
+      #fff8a4  12.19%,
+      #ffec7c 29.82%,
+      #ffea6a 51.94%,
+      #ffd43b  90.29%
+    );
+    color: black;
+  }
+
+
+  .custom-search-input {
+    width: 92%;
+  }
