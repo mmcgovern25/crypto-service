@@ -302,6 +302,7 @@ const projects = [
       },
     ],
     image: iphone,
+    live_link: "https://appleiphonesale.netlify.app/",
     source_code_link: "https://github.com/mmcgovern25/iPhoneGSAP3JS",
   },
   {
