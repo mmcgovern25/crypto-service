@@ -234,6 +234,7 @@ const projects = [
       },
     ],
     image: nike,
+    live_link: "https://nikestoresale.netlify.app/",
     source_code_link: "https://github.com/mmcgovern25/Nike-Ecommerce/tree/main/Nike-Store",
   },
   {
